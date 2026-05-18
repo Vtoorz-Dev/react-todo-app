@@ -27,14 +27,4 @@ O projeto conta com os seguintes recursos baseados no código atual:
 Durante o desenvolvimento deste componente, foram colocados em prática:
 *   O hook `useState` para controle do input e da lista de tarefas.
 *   O conceito de **imutabilidade do estado** no React ao adicionar novos itens utilizando a função de callback `setTodos((prevTodos) => [...prevTodos, newTodo])`.
-*   Uso de métodos nativos do JavaScript como `.filter()` (para remoção) e `.map()` (para renderizar a lista na tela).
-
----
-
-## 📦 Como Executar o Projeto Localmente
-
-Para clonar e rodar esta aplicação na sua máquina, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/) instalados.
-
-1. **Clone o repositório:**
-```bash
-git clone [https://github.com/SEU-USUARIO/react-todo-app.git](https://github.com/SEU-USUARIO/react-todo-app.git)
+*   Uso de métodos nativos do JavaScript como `.filter()` (para remoção) e `.map()` (para renderizar a lista na tela)
