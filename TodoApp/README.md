@@ -1,16 +1,44 @@
-# React + Vite
+# 📝 TaskCraft - Lista de Tarefas em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web simples, intuitiva e responsiva para gerenciamento de tarefas diárias. Este projeto foi desenvolvido em **React** com o objetivo de praticar os conceitos fundamentais da biblioteca, como gerenciamento de estados, manipulação de formulários e renderização de listas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+O projeto conta com os seguintes recursos baseados no código atual:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Adicionar Tarefas:** Permite a inserção de novas tarefas com validação para impedir campos vazios ou apenas com espaços (`.trim()`).
+- **Identificação Única:** Cada tarefa recebe um ID gerado dinamicamente com base no timestamp (`Date.now()`), evitando conflitos de chave (_key_) na renderização.
+- **Remoção de Tarefas:** Exclusão instantânea de itens individuais utilizando filtros de array.
+- **Interface Reativa:** Exibe uma mensagem de feedback amigável ("não há tarefas") quando a lista está vazia.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias Utilizadas
+
+- **React** (Functional Components & Hooks)
+- **JavaScript (ES6+)**
+- **CSS3** (Estilização customizada via `TodoApp.css`)
+
+---
+
+## 💡 Aprendizados e Conceitos Aplicados
+
+Durante o desenvolvimento deste componente, foram colocados em prática:
+
+- O hook `useState` para controle do input e da lista de tarefas.
+- O conceito de **imutabilidade do estado** no React ao adicionar novos itens utilizando a função de callback `setTodos((prevTodos) => [...prevTodos, newTodo])`.
+- Uso de métodos nativos do JavaScript como `.filter()` (para remoção) e `.map()` (para renderizar a lista na tela).
+
+---
+
+## 📦 Como Executar o Projeto Localmente
+
+Para clonar e rodar esta aplicação na sua máquina, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/) instalados.
+
+1. **Clone o repositório:**
+
+```bash
+git clone [https://github.com/SEU-USUARIO/react-todo-app.git](https://github.com/SEU-USUARIO/react-todo-app.git)
+```

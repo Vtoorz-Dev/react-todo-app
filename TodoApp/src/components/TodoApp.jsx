@@ -7,6 +7,10 @@ const TodoApp = () => {
 
     const [inputValue, setInputValue] = useState('');
 
+    const Clear = () => {
+        setTodos([]);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -55,6 +59,8 @@ const TodoApp = () => {
                     </li>
                 ))}
             </ul>
+
+            <button onClick={Clear} className="btn-clear">Limpar tudo</button>
         </div>
     );
 }
